@@ -19,11 +19,18 @@
 // }
 
 
-let n = +prompt("Введите кол-во блоков");
-let box = '<div class="box"></div>';
-let box_list = document.querySelector('.box_list');
+// let n = prompt("Введите кол-во блоков");
+// let box = '<div class="box"></div>';
+// let box_list = document.querySelector('.box_list');
+//
+// for(let y = 0; y < n; y++){
+//     box_list.insertAdjacentHTML('beforeend',box);
+// }
 
-for(let y = 0; y = n; y++){
-    box_list.insertAdjacentHTML('beforeend',box);
+let box_list = document.querySelector('.box_list');
+let box = document.querySelector('.num');
+let n = prompt('Введите кол-во блоков');
+for(let x = 0; x < n; x++){
+    box_list.insertAdjacentHTML('beforeend', `<div class="box">${x+1}</div>`);
 }
 

@@ -6,12 +6,13 @@
 /*}*/
 
 .box{
-    height: 100px;
-    width: 100px;
-    background: bisque;
+    padding: 50px;
+    background: #a19cce;
+    color: #000;
     margin: 30px;
 }
 
 .box_list{
-    
+    display: flex;
+    flex-wrap: wrap;
 }
