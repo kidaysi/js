@@ -8,12 +8,41 @@
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500&display=swap" rel="stylesheet">
     <title>Title</title>
 </head>
-<script defer src="js/main.js"></script>
+<script defer src="assets/js/main.js"></script>
 <body>
-<a href="https://github.com/kidaysi/js.git">github</a>
+<header>
+    <div class="container">
+        <div class="header_content">
+            <div class="det">
+                <h2 class="logo">Новости</h2><br>
+                <a href="https://github.com/kidaysi/js.git">github</a>
+            </div>
+            <button class="open_modal"><img src="assets/img/png/add.png" alt="add_news" class="icon"></button>
+        </div>
+    </div>
+</header>
 <div class="container">
     <div class="news">
-
+</div>
+</div>
+<div class="modal hidden">
+    <div class="modal_window">
+        <div class="headline-close_modal">
+            <h2>Создать новость</h2>
+            <button class="close_modal"><img src="assets/img/svg/close.svg" alt="close"></button>
+        </div>
+        <form class="create_news" id="create_news"><label class="label_add" for="name">Введите название новости</label><br>
+            <input class="add_input" type="text" placeholder="Название" id="name" name="name"><br>
+            <label class="label_add" for="text">Введите содержимое новости</label><br>
+            <textarea class="add_input" name="text" placeholder="Текст" id="text"></textarea><br>
+            <label class="label_add" for="date">Выберите дату</label><br>
+            <input class="add_input" type="date" placeholder="Дата" id="date" name="date"><br>
+            <label class="label_add" for="author">Автор</label><br>
+            <input class="add_input" type="text" placeholder="Автор" id="author" name="author"><br>
+            <label class="label_add" for="id">ID автора</label><br>
+            <input class="add_input" type="text" placeholder="ID" id="id" name="id"><br>
+            <input type="submit" value="Создать новость" class="button" name="create_news">
+        </form>
     </div>
 </div>
 </body>

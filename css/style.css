@@ -1,5 +1,6 @@
 body{
     font-family: 'Montserrat', sans-serif;
+    background: #e3e5fc;
 }
 
 *{
@@ -11,10 +12,34 @@ body{
 
 .container{
     margin: auto;
-    padding: 20px;
-    max-width: 70%;
+    padding: 0;
+    max-width: 1300px;
 }
 
+/*шапка*/
+.header_content{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo{
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 400;
+    font-size: 30px;
+    color: #000;
+}
+.add_icon img{
+    width: 60px;
+}
+
+
+.det{
+    display: flex;
+    flex-direction: column;
+}
+
+/*content*/
 .news{
     padding: 20px;
     display: flex;
@@ -31,17 +56,17 @@ body{
     gap:30px;
 }
 
-.header{
+.header_news{
     display: flex;
     justify-content: space-between;
-    align-items: center;
 }
-
 .name{
     font-family: 'Montserrat', sans-serif;
     font-weight: 500;
     font-size: 28px;
     color: #000;
+    word-break: normal;
+    margin-left: 0;
 }
 
 .date{
@@ -50,12 +75,18 @@ body{
     font-size: 16px;
     color: grey;
 }
-
+.id{
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 500;
+    font-size: 20px;
+    color: #000;
+}
 .text{
     font-family: 'Montserrat', sans-serif;
     font-weight: 400;
     font-size: 20px;
     color: #181818;
+    word-break: normal;
 }
 
 .footer{
@@ -76,4 +107,153 @@ body{
     font-weight: 300;
     font-size: 16px;
     color: grey;
+}
+
+/*modal*/
+.add_news{
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    width: 30%;
+    margin: auto;
+}
+
+.add_content{
+    display: flex;
+    flex-direction: column;
+}
+
+.label_add{
+    color: #000;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 300;
+    font-size: 15px;
+}
+
+.add_input{
+    padding: 10px 15px;
+    background: none;
+    color: #232323;
+    border-radius: 5px;
+    border: #232323 solid 1px;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 300;
+    font-size: 12px;
+}
+
+.button{
+    padding: 15px 20px;
+    color: #232323;
+    background: none;
+    border-radius: 5px;
+    border: #232323 solid 1px;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 500;
+    font-size: 16px;
+    transition: 0.5s;
+}
+
+.button:hover{
+    background: #232323;
+    color: #fff;
+}
+
+.btn{
+    margin: auto;
+}
+
+h2{
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 400;
+    font-size: 24px;
+    margin: auto;
+}
+/*modal*/
+/*.news {*/
+/*    padding-top: 20px;*/
+/*}*/
+/*.news {*/
+/*    padding: 20px;*/
+/*    border-radius: 15px;*/
+/*    border: 1px solid #C0C0C0;*/
+/*}*/
+/*.news + .news {*/
+/*    margin-top: 35px;*/
+/*}*/
+
+.modal {
+    width: 100%;
+    height: 100%;
+    background: #0000005e;
+    position: fixed;
+    top: 0;
+    left: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.modal_window {
+    padding: 20px;
+    border-radius: 8px;
+    border: 1px solid #C0C0C0;
+    background: #ffffff;
+    width: 500px;
+}
+.hidden {
+    display: none;
+}
+.close_modal
+{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 35px;
+    height: 35px;
+    background: none;
+    border-radius: 50px;
+    cursor: pointer;
+    border: none;
+    transition: 0.20s ease-out;
+}
+.open_modal
+{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 55px;
+    height: 55px;
+    background: none;
+    border-radius: 50px;
+    cursor: pointer;
+    border: none;
+    transition: 0.20s ease-out;
+}
+.open_modal img {
+    width: 50px;
+}
+.close_modal:hover {
+    background: #e9e9e9;
+}
+.close_modal:hover img{
+    opacity: 100%;
+}
+.close_modal  img {
+    width: 18px;
+    height: 18px;
+    opacity: 60%;
+}
+
+.create_news {
+    display: flex;
+    flex-direction: column;
+    margin-top: 20px;
+}
+input[type="text"]:focus-visible,textarea:focus-visible {
+    outline: none;
+}
+.headline-close_modal
+{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
 }
